@@ -1,12 +1,12 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { AppBar,Toolbar, Typography, Button, Box, Grid, Container, Card, CardContent, CardActions } from "@mui/material";
+import { AppBar,Toolbar, Typography, Button, Box, Container, Card, CardContent, CardActions } from "@mui/material";
 import { Facebook, Twitter, GitHub, LinkedIn } from "@mui/icons-material";
 import ProfilePic from '.././images/junard.jpeg';
-
+import ContactMe from "./contact-me";
 
 const Header = styled(AppBar)(({theme}) => ({
-    backgroundColor: "white",
+    backgroundColor: "black",
     position: 'fixed',
 
 }));
@@ -21,7 +21,7 @@ const InnerHeader = styled(Toolbar)(({theme}) => ({
     fontWeight: "300",
     '& a': {
         textDecoration: 'none',
-        color: 'black',
+        color: 'white',
         marginLeft: 10,
         padding: '10px 12px',
         borderRadius: '5px',
@@ -29,22 +29,22 @@ const InnerHeader = styled(Toolbar)(({theme}) => ({
     '& .navigation': {
         marginRight: 30,
         '& .home:hover': {
-            backgroundColor: '#EDEDED',
+
             color: 'hotpink',
             fontWeight: "bold",
         },
         '& .about:hover': {
-            backgroundColor: '#EDEDED',
+
             color: 'hotpink',
             fontWeight: "bold",
         },
         '& .projects:hover': {
-            backgroundColor: '#EDEDED',
+
             color: 'hotpink',
             fontWeight: "bold",
         },
         '& .contact:hover': {
-            backgroundColor: '#EDEDED',
+
             color: 'hotpink',
             fontWeight: "bold",
         },
@@ -53,7 +53,7 @@ const InnerHeader = styled(Toolbar)(({theme}) => ({
     '& .junardlogo': {
         fontSize: 25,
         fontWeight: 'bold',
-        color: 'black',
+        color: 'white',
 
     }
 }));
@@ -82,10 +82,9 @@ const MainContent = styled(Container)(({theme}) => ({
 
 const ButtonStyled = styled(Button)(({theme}) => ({
     color: 'black',
-    padding: 10,
+    padding: 15,
     marginTop: 20,
     fontSize: 20,
-    left: 0,
     fontWeight: 'bold',
     borderRadius: 5,
     border: '3px solid pink',
@@ -181,8 +180,6 @@ const FourthMainContent = styled(Container)(({theme}) => ({
 }));
 
 
-
-
 export const JunardVillahermosa = () => {
     return (
         <React.Fragment>
@@ -220,7 +217,7 @@ export const JunardVillahermosa = () => {
                                     Download Resume
                                 </ButtonStyled>
                             </CardActions>
-                            <div style={{marginTop: '20px', display: 'flex', gap: '20px'}}>
+                            <div style={{marginTop: '20px', display: 'flex', gap: '20px', marginLeft: '5px'}}>
                                 <a href=""><Facebook sx={{ color: 'blue', fontSize: '50px'}}/></a>
                                 <a href=""><Twitter sx={{ color: 'skyblue', fontSize: '50px'}}/></a>
                                 <a href=""><GitHub sx={{ color: 'black', fontSize: '50px'}}/></a>
@@ -241,7 +238,7 @@ export const JunardVillahermosa = () => {
             <SecondContainer id="about-me">
                 <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
                 <SecondMainContent>
-                    <Card sx={{ height: 'auto', width: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.066)'}}>
+                    <Card sx={{ height: 'auto', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0.066)'}}>
                         <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
                             <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                 ABOUT ME
@@ -255,7 +252,7 @@ export const JunardVillahermosa = () => {
                         </CardContent>
 
                     </Card>
-                    <Card sx={{ height: 'auto', width: '1000px', backgroundColor: 'rgba(255, 192, 203, 0.571)'}}>
+                    <Card sx={{ height: 'auto', width: '100%', backgroundColor: 'rgba(255, 192, 203, 0.571)'}}>
                         <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
                             <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                 SKILLSET
@@ -272,7 +269,7 @@ export const JunardVillahermosa = () => {
                 <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
 
                     <ThirdMainContent>
-                        <Card sx={{ height: 'auto', width: '1000px'}}>
+                        <Card sx={{ height: 'auto', width: '100%', backgroundColor: 'rgba(255, 192, 203, 0.571)'}}>
                             <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
                                 <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                     PROJECTS
@@ -285,20 +282,13 @@ export const JunardVillahermosa = () => {
             </ThirdContainer>
 
             <FourthContainer id="contact-me">
-                <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
-                <FourthMainContent>
-                        <Card sx={{ height: 'auto', width: '1000px'}}>
-                            <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
-                                <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
-                                    SEND E-MAIL
-                                </Typography>
-                                <Typography variant="p" component='div' sx={{fontWeight: 'normal', textJustify: 'justify'}}>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                            </Typography>
-                            </CardContent>
-                        </Card>
+            <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
+            <ContactMe />
 
 
-                </FourthMainContent>
+
+
+
 
             </FourthContainer>
 
