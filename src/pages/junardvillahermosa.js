@@ -1,6 +1,16 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { AppBar,Toolbar, Typography, Button, Box, Container, Card, CardContent, CardActions } from "@mui/material";
+import {
+    AppBar,
+    Toolbar,
+    Typography,
+    Button,
+    Box,
+    Container,
+    Card,
+    CardContent,
+    CardActions
+} from "@mui/material";
 import { Facebook, Twitter, GitHub, LinkedIn } from "@mui/icons-material";
 import ProfilePic from '.././images/junard.jpeg';
 import ContactMe from "./contact-me";
@@ -8,7 +18,6 @@ import ContactMe from "./contact-me";
 const Header = styled(AppBar)(({theme}) => ({
     backgroundColor: "black",
     position: 'fixed',
-
 }));
 
 const InnerHeader = styled(Toolbar)(({theme}) => ({
@@ -158,25 +167,6 @@ const FourthContainer = styled(Box)(({theme}) => ({
     position: 'relative',
     backgroundColor: 'transparent',
     paddingTop: '30px',
-
-
-
-}));
-
-const FourthMainContent = styled(Container)(({theme}) => ({
-    backgroundColor: 'transparent',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 40,
-    alignItems: 'center',
-    height: 'auto',
-    width: '100%',
-    padding: '20px',
-    justifyContent: 'space-around',
-    '& .content-here': {
-        padding: '100px',
-    }
-
 }));
 
 
@@ -201,7 +191,14 @@ export const JunardVillahermosa = () => {
             <FirstContainer id="home">
                 <MainContent>
 
-                    <Card sx={{ height: 'auto', width: '400px', padding: '10px', border: 'none', boxShadow: 'none'}}>
+                    <Card
+                    sx={{
+                        height: 'auto',
+                        width: '400px',
+                        padding: '10px',
+                        border: 'none',
+                        boxShadow: 'none'
+                        }}>
                         <CardContent sx={{ height: 'auto', border: 'none', boxShadow: 'none'}}>
                             <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                 Hello, World!
@@ -226,10 +223,20 @@ export const JunardVillahermosa = () => {
                         </CardContent>
 
                     </Card>
-                    <Card sx={{height: 'auto', width: 'auto', border: 'none', boxShadow: 'none' }}>
-                        <CardContent sx={{ backgroundColor: 'white', height: 'auto', border: 'none', boxShadow: 'none'}}>
+                    <Card
+                    sx={{
+                        height: 'auto',
+                        width: 'auto',
+                        border: 'none',
+                        boxShadow: 'none'
+                        }}>
+                        <CardContent
+                        sx={{
+                            backgroundColor: 'white',
+                            height: 'auto',
+                            border: 'none',
+                            boxShadow: 'none'}}>
                             <ProfilePicture src={ProfilePic} sx={{boxShadow: '0 7px 8px rgba(0, 0, 0, 0.1)'}}/>
-
                         </CardContent>
                     </Card>
                 </MainContent>
@@ -238,22 +245,41 @@ export const JunardVillahermosa = () => {
             <SecondContainer id="about-me">
                 <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
                 <SecondMainContent>
-                    <Card sx={{ height: 'auto', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0.066)'}}>
-                        <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
+                    <Card
+                    sx={{
+                        height: 'auto',
+                        width: '100%',
+                        backgroundColor: 'rgba(0, 0, 0, 0.066)'
+                        }}>
+                        <CardContent
+                        sx={{
+                            backgroundColor: 'transparent',
+                            height: 'auto',
+                            border: 'none',
+                            boxShadow: 'none'
+                            }}>
                             <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                 ABOUT ME
                             </Typography>
                             <Typography variant="p" component='div' sx={{fontWeight: 'normal', textJustify: 'justify'}}>
                                 My name is Junard Villahermosa, and I am a determined 22-year-old Information Technology student at Cebu Technological University - Argao Campus. My unwavering ambition is to become a highly skilled Software Engineer and make a significant impact in the Tech industry. <br /> <br />When I entered college, I anticipated the programming challenges that would come with no prior background. However, I refused to let that stop me from pursuing my passion through self-study. As a result, I have established a firm foundation in C and Java while expanding my skillset to include the creation of simple applications utilizing ASP.NET and Windows Forms. Furthermore, I have developed CRUD applications with Xamarin and Firebase's real-time database. To add to my repertoire, I've also created a small CRUD application utilizing JavaScript and PHP for a project. Currently, I am focused on my capstone project, which involves developing an application using React and TypeScript.
                             </Typography>
-
-
-
                         </CardContent>
 
                     </Card>
-                    <Card sx={{ height: 'auto', width: '100%', backgroundColor: 'rgba(255, 192, 203, 0.571)'}}>
-                        <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
+                    <Card
+                    sx={{
+                        height: 'auto',
+                        width: '100%',
+                        backgroundColor: 'rgba(255, 192, 203, 0.571)'
+                        }}>
+                        <CardContent
+                        sx={{
+                            backgroundColor: 'transparent',
+                            height: 'auto',
+                            border: 'none',
+                            boxShadow: 'none'
+                            }}>
                             <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                 SKILLSET
                             </Typography>
@@ -267,10 +293,20 @@ export const JunardVillahermosa = () => {
 
             <ThirdContainer id="projects">
                 <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
-
                     <ThirdMainContent>
-                        <Card sx={{ height: 'auto', width: '100%', backgroundColor: 'rgba(255, 192, 203, 0.571)'}}>
-                            <CardContent sx={{ backgroundColor: 'transparent',  height: 'auto', border: 'none', boxShadow: 'none'}}>
+                        <Card
+                        sx={{
+                            height: 'auto',
+                            width: '100%',
+                            backgroundColor: 'rgba(255, 192, 203, 0.571)'
+                            }}>
+                            <CardContent
+                            sx={{
+                                backgroundColor: 'transparent',
+                                height: 'auto',
+                                border: 'none',
+                                boxShadow: 'none'
+                                }}>
                                 <Typography variant="h4" component='div' sx={{fontWeight: 'bold', fontSize: '50px'}}>
                                     PROJECTS
                                 </Typography>
@@ -284,21 +320,8 @@ export const JunardVillahermosa = () => {
             <FourthContainer id="contact-me">
             <hr style={{width: '90%', backgroundColor: 'gray', height: '3px'}}/>
             <ContactMe />
-
-
-
-
-
-
             </FourthContainer>
-
-
         </React.Fragment>
-
-
-
     )
-
-
 }
 

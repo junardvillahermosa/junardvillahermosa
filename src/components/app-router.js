@@ -1,5 +1,4 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Root } from "./root";
 import { JunardVillahermosa } from "../pages/junardvillahermosa";
 
 const AppRouters = () => {
