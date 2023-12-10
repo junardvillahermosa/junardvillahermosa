@@ -1,8 +1,12 @@
-import AppRouters from "./components/app-router";
+import { Routes, Route } from "react-router";
+import { JunardVillahermosa } from "./pages/junardvillahermosa";
 
 function App() {
   return (
-    <AppRouters />
+    <Routes>
+      <Route path="/" element={<JunardVillahermosa />}></Route>
+
+    </Routes>
   );
 }
 
