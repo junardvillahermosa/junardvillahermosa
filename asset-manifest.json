@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/junardvillahermosa/static/css/main.35dbec21.css",
-    "main.js": "/junardvillahermosa/static/js/main.ec583d11.js",
+    "main.js": "/junardvillahermosa/static/js/main.58c0b65b.js",
     "static/js/787.a2423ded.chunk.js": "/junardvillahermosa/static/js/787.a2423ded.chunk.js",
     "static/media/backgroundImage.jpeg": "/junardvillahermosa/static/media/backgroundImage.a1ad91a556ebedda4d45.jpeg",
     "static/media/junard.jpeg": "/junardvillahermosa/static/media/junard.dd6cfa8138f376deadd3.jpeg",
     "index.html": "/junardvillahermosa/index.html",
     "main.35dbec21.css.map": "/junardvillahermosa/static/css/main.35dbec21.css.map",
-    "main.ec583d11.js.map": "/junardvillahermosa/static/js/main.ec583d11.js.map",
+    "main.58c0b65b.js.map": "/junardvillahermosa/static/js/main.58c0b65b.js.map",
     "787.a2423ded.chunk.js.map": "/junardvillahermosa/static/js/787.a2423ded.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35dbec21.css",
-    "static/js/main.ec583d11.js"
+    "static/js/main.58c0b65b.js"
   ]
 }
