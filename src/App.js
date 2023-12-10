@@ -1,11 +1,10 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import { JunardVillahermosa } from "./pages/junardvillahermosa";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<JunardVillahermosa />}></Route>
-
     </Routes>
   );
 }
