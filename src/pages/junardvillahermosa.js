@@ -12,6 +12,7 @@ import {
     CardActions
 } from "@mui/material";
 import { Facebook, Twitter, GitHub, LinkedIn } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 import ProfilePic from '.././images/junard.jpeg';
 import ContactMe from "./contact-me";
 
@@ -39,22 +40,22 @@ const InnerHeader = styled(Toolbar)(({theme}) => ({
         marginRight: 30,
         '& .home:hover': {
 
-            color: 'hotpink',
+            color: 'pink',
             fontWeight: "bold",
         },
         '& .about:hover': {
 
-            color: 'hotpink',
+            color: 'pink',
             fontWeight: "bold",
         },
         '& .projects:hover': {
 
-            color: 'hotpink',
+            color: 'pink',
             fontWeight: "bold",
         },
         '& .contact:hover': {
 
-            color: 'hotpink',
+            color: 'pink',
             fontWeight: "bold",
         },
 
@@ -63,6 +64,9 @@ const InnerHeader = styled(Toolbar)(({theme}) => ({
         fontSize: 25,
         fontWeight: 'bold',
         color: 'white',
+        '&:hover': {
+            color: 'pink',
+        }
 
     }
 }));
@@ -171,11 +175,18 @@ const FourthContainer = styled(Box)(({theme}) => ({
 
 
 export const JunardVillahermosa = () => {
+    const navigate = useNavigate();
+    const handleJunardClick = (event) => {
+        event.preventDefault();
+        navigate("/");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <React.Fragment>
             <Header>
                 <InnerHeader>
-                    <a href="#Junard" className="junardvillahermosa">
+                    <a href="#Junard" className="junardvillahermosa" onClick={handleJunardClick}>
                         <Typography className="junardlogo">JUNARDVILLAHERMOSA</Typography>
                     </a>
                     <nav className="navigation">
@@ -215,10 +226,10 @@ export const JunardVillahermosa = () => {
                                 </ButtonStyled>
                             </CardActions>
                             <div style={{marginTop: '20px', display: 'flex', gap: '20px', marginLeft: '5px'}}>
-                                <a href=""><Facebook sx={{ color: 'blue', fontSize: '50px'}}/></a>
-                                <a href=""><Twitter sx={{ color: 'skyblue', fontSize: '50px'}}/></a>
-                                <a href=""><GitHub sx={{ color: 'black', fontSize: '50px'}}/></a>
-                                <a href=""><LinkedIn sx={{ color: 'blue', fontSize: '50px'}}/></a>
+                                <a href="https://www.facebook.com/junarddvillahermosa"><Facebook sx={{ color: 'blue', fontSize: '50px'}}/></a>
+                                <a href="https://twitter.com/junardurable"><Twitter sx={{ color: 'skyblue', fontSize: '50px'}}/></a>
+                                <a href="https://github.com/junardvillahermosa"><GitHub sx={{ color: 'black', fontSize: '50px'}}/></a>
+                                <a href="https://www.linkedin.com/in/junardvillahermosa/"><LinkedIn sx={{ color: 'blue', fontSize: '50px'}}/></a>
                             </div>
                         </CardContent>
 

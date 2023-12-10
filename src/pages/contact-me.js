@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -9,7 +8,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { EmailOutlined } from '@mui/icons-material';
 import { Facebook, Twitter, GitHub, LinkedIn } from "@mui/icons-material";
 import { styled } from '@mui/system';
 import ProfilePic from '.././images/backgroundImage.jpeg';
@@ -43,15 +41,10 @@ function Copyright(props) {
 }
 
 
-
-
-
-// TODO remove, this demo shouldn't need to reset the theme.
-
 const defaultTheme = createTheme();
 
 export default function ContactMe() {
-  const handleSubmit = (event) => {
+    const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
@@ -59,8 +52,6 @@ export default function ContactMe() {
       email: data.get('email'),
       subject: data.get('subject'),
       message: data.get('message'),
-
-
     });
   };
 
@@ -166,14 +157,12 @@ export default function ContactMe() {
                     Or get in touch with me on socials
                 </Typography>
                 <div style={{marginTop: '20px', display: 'flex', gap: '20px'}}>
-                                <a href=""><Facebook sx={{ color: 'blue', fontSize: '50px'}}/></a>
-                                <a href=""><Twitter sx={{ color: 'skyblue', fontSize: '50px'}}/></a>
-                                <a href=""><GitHub sx={{ color: 'black', fontSize: '50px'}}/></a>
-                                <a href=""><LinkedIn sx={{ color: 'blue', fontSize: '50px'}}/></a>
+                                <a href="https://www.facebook.com/junarddvillahermosa"><Facebook sx={{ color: 'blue', fontSize: '50px'}}/></a>
+                                <a href="https://twitter.com/junardurable"><Twitter sx={{ color: 'skyblue', fontSize: '50px'}}/></a>
+                                <a href="https://github.com/junardvillahermosa"><GitHub sx={{ color: 'black', fontSize: '50px'}}/></a>
+                                <a href="https://www.linkedin.com/in/junardvillahermosa/"><LinkedIn sx={{ color: 'blue', fontSize: '50px'}}/></a>
                 </div>
-
                 </Box>
-
 
               <Copyright sx={{ mt: 5 }} />
             </Box>
