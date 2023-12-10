@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<JunardVillahermosa />}></Route>
+        <Route path="/junard-villahermosa" element={<JunardVillahermosa />}></Route>
       </Routes>
     </Router>
   );
